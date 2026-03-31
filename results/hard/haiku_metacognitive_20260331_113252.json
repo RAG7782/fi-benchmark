@@ -1,0 +1,115 @@
+{
+  "results": [
+    {
+      "case": "fraud_atm_ponzi",
+      "domain": "Financial Forensics",
+      "condition": "FI-meta",
+      "model": "haiku",
+      "score": 25,
+      "evaluation": {
+        "domain_accuracy": 4,
+        "reasoning_depth": 4,
+        "completeness": 3,
+        "nuance": 3,
+        "actionability": 4,
+        "hallucination_check": 3,
+        "professional_judgment": 4,
+        "total": 25,
+        "strengths": "The analysis demonstrates strong structural competence: the Ponzi mechanics reconstruction is methodologically sound, the regulatory arbitrage framing around Reg D is accurate, the phased recovery strategy is credibly prioritized, and the clawback examples using net investment calculations are technically correct and practically useful. The SAR analysis shows genuine BSA/AML domain knowledge. The table-based red flag presentation is actionable for investor education. The affinity fraud psychological dynamics (testimonial lock-in, availability heuristic) reflect sophisticated understanding of why these schemes persist. The forensic reconstruction of fund flows and the 'where did the money go' decomposition are particularly strong practitioner-level analysis.",
+        "weaknesses": "1. HALLUCINATION RISK: The analysis references a specific DOJ indictment (September 2025) and specific figures ($770M collected, $650M lost, $120M remaining, 2,700 investors, 7-year timeline, named entities Prestige Capital/WF Velocity/Paramount Management Group, and 'Heller' as the operator) as though these are established facts from the source document, but then proceeds to reconstruct them analytically as if uncertain \u2014 creating internal inconsistency about what is known vs. inferred. Rule 506 investor limits are misstated: Rule 506(b) allows up to 35 non-accredited investors, not 2,000 \u2014 the 2,000 cap applies to total holders under Section 12(g), which is a different provision entirely. This is a meaningful technical error. 2. MISSING ELEMENTS: Self-directed IRA liability and custodian exposure (a major recovery vector in similar schemes like Woodbridge) is entirely absent. The bankruptcy vs. receivership strategic tension is not addressed \u2014 the choice affects clawback reach, automatic stay implications, and distribution priority. Community trust dynamics are described but not analyzed as a structured vulnerability factor with specific mitigation recommendations. The analysis mentions Part IV (investor red flags) in the executive summary but the document is cut off before delivering it as a standalone section. 3. NUANCE GAPS: The clawback analysis applies a simplistic net investment standard without acknowledging the good faith defense available to investors who reinvested returns (they never actually received the cash), the Ponzi scheme exception to the ordinary course of business defense, or the equitable subordination arguments. The bank negligence theory is overstated \u2014 private rights of action under BSA \u00a75318(g) are generally not available to private plaintiffs (courts have consistently held no private right of action), which undermines the $50-100M recovery estimate from that avenue. The analysis does not address the tension between aggressive clawback from defrauded investors (many of whom are also net losers) and the reputational/political constraints on the receiver. 4. The regulatory reform recommendations section appears to be missing entirely from the submitted analysis.",
+        "missed_elements": [
+          "Self-directed IRA custodian liability analysis \u2014 a major recovery vector completely absent",
+          "Bankruptcy vs. receivership strategic comparison and implications for clawback reach and automatic stay",
+          "No private right of action under BSA \u00a75318(g) \u2014 bank negligence theory is legally flawed as presented",
+          "Rule 506(b) 35 non-accredited investor limit incorrectly stated as 2,000",
+          "Good faith defense and Ponzi exception nuances in clawback litigation strategy",
+          "SEC/state securities regulatory reform recommendations (mentioned in executive summary, not delivered)",
+          "Community trust as a structured vulnerability factor with specific investor protection design recommendations",
+          "Distribution waterfall is cut off \u2014 tax priority claims, secured creditors, and investor pro-rata methodology not completed",
+          "Part IV standalone red flags section referenced but not delivered",
+          "No analysis of criminal restitution order coordination with civil receivership recovery",
+          "No discussion of statute of limitations issues for early investor clawbacks",
+          "Absence of analysis regarding whether Heller's scheme meets state Blue Sky law violations and cross-jurisdictional enforcement"
+        ]
+      }
+    },
+    {
+      "case": "medical_mody_misdiagnosis",
+      "domain": "Clinical Endocrinology",
+      "condition": "FI-meta",
+      "model": "haiku",
+      "score": 33,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "nuance": 4,
+        "actionability": 5,
+        "hallucination_check": 4,
+        "professional_judgment": 5,
+        "total": 33,
+        "strengths": "Exceptional breadth and depth across all required elements. The comparative table contrasting T1D vs MODY vs this patient is genuinely expert-level clinical reasoning. The genetic testing algorithm with explicit Phase 1/Phase 2 stratification, CNV detection requirement, and ACMG variant classification guidance reflects real-world laboratory literacy that junior clinicians miss. The treatment transition protocol with specific dosing, overlap period rationale, and titration schedule is immediately actionable. The bias taxonomy is sophisticated \u2014 correctly identifying six distinct mechanisms including Diagnosis Momentum and Base-Rate Neglect, not just the obvious anchoring/confirmation pair. The pregnancy section correctly identifies the GCK-MODY-specific consideration (offspring risk, 50% inheritance) and appropriately flags that sulfonylurea use in MODY pregnancy differs from general gestational diabetes management. The misdiagnosis rate statistic context (5-10% background vs 65-75% pre-test in this phenotype) reflects genuine epidemiologic literacy. The G6PD screening caveat before sulfonylurea initiation is a non-obvious, clinically important detail that distinguishes expert from competent analysis.",
+        "weaknesses": "One substantive accuracy concern: the analysis states sulfonylureas 'cross the placenta but fetal hyperinsulinism is rare at therapeutic maternal doses' \u2014 this is nuanced but current MODY pregnancy guidelines (particularly ISPAD and UK MODY clinical practice) actually recommend continued sulfonylurea use in GCK-MODY pregnancy with specific caveats about glibenclamide vs gliclazide placental transfer differences; the analysis conflates subtypes here slightly. The 'Shields et al. 2010 MODY probability calculator' reference is plausible but the specific citation and percentage outputs (65-75%) are not verifiable from the provided text and may be extrapolated rather than directly cited \u2014 minor hallucination risk. The analysis does not distinguish GCK-MODY pregnancy management (where treatment is often NOT recommended for the mother, only monitored for fetal macrosomia by fetal abdominal circumference ultrasound) from HNF1A-MODY pregnancy \u2014 this is a meaningful clinical distinction that was noted in the completeness criteria but not fully developed. The 'Checkpoint' framework language (Checkpoint 5, Checkpoint 1, etc.) appears to be an internal system reference that adds noise without clinical meaning to an external reader.",
+        "missed_elements": [
+          "GCK-MODY pregnancy management is specifically distinct: treatment of mother is generally NOT recommended (fetus compensates); instead, monitoring fetal abdominal circumference by ultrasound is the standard approach \u2014 this critical nuance was underemphasized despite being flagged in evaluation criteria",
+          "No explicit mention of the 50-90% MODY misdiagnosis rate statistic, which is a key epidemiologic fact that contextualizes the case and is listed as an expected element",
+          "C-peptide stimulation testing (mixed meal tolerance test or glucagon stimulation) as a complementary confirmatory biomarker before genetic testing was not discussed \u2014 useful when genetic testing is delayed or inconclusive",
+          "No discussion of insurance/cost barriers to genetic testing and practical pathways (e.g., Exeter Molecular Genetics referral pathway in UK, or equivalent US academic center pathways) which affects actionability in real clinical settings",
+          "Transient neonatal hypoglycemia as a feature of HNF4A-MODY (not HNF1A) was mentioned but the clinical implication for neonatal monitoring in offspring was not developed"
+        ]
+      }
+    },
+    {
+      "case": "brazil_tax_restructuring",
+      "domain": "Brazilian Tax Law (Post-Reform)",
+      "condition": "FI-meta",
+      "model": "haiku",
+      "score": 15,
+      "evaluation": {
+        "domain_accuracy": 2,
+        "reasoning_depth": 3,
+        "completeness": 2,
+        "nuance": 3,
+        "actionability": 2,
+        "hallucination_check": 1,
+        "professional_judgment": 2,
+        "total": 15,
+        "strengths": "The analysis demonstrates structural awareness of the reform landscape and attempts to integrate multiple legislative layers (Lei 14.754/2023, EC 132/2023, Lei 15.270/2025). The preliminary epistemic disclaimer is professionally appropriate and shows intellectual honesty about uncertainty. The tabular summaries are well-organized. The entity-by-entity structure is correct. The identification of ICMS credit stranding risk and the CFC regime change as material issues shows genuine domain awareness. The CBS/IBS transition timeline (2026-2033) is directionally correct.",
+        "weaknesses": "Critical hallucinations undermine the entire analysis: (1) Lei 14.754/2023 does NOT introduce a 'deemed rate of SELIC+6%' on CFC net worth \u2014 this is fabricated. Lei 14.754 reformed taxation of exclusive funds (come-cotas extension) and offshore entities held by INDIVIDUALS, not corporations; the CFC regime for legal entities remains under Lei 12.973/2014. (2) Lei 15.270/2025 dividend withholding at R$1.2M threshold \u2014 this is a fabricated/unverified provision; as of the knowledge boundary, dividend taxation reform proposals existed but Lei 15.270/2025 specifics as described appear invented. (3) The 'RFB Form 8621' cited is a US IRS form, not a Brazilian RFB form \u2014 this is a serious US/Brazil confusion error. (4) The analysis treats Lei 14.754/2023 as applying to corporate holding companies for CFC purposes, when it primarily reformed individual investor taxation of exclusive funds and offshore structures. (5) The analysis is truncated and never completes Entity 3 or provides Entities 4+, restructuring steps, timeline, or succession/ITCMD analysis. (6) IBS/CBS rates cited as 'estimated 8-12%' and '5-7%' without basis in LC 214/2025. (7) The non-resident child's Portugal-Brazil treaty analysis is completely absent. (8) No ITCMD progressive reform analysis. (9) No Simples Nacional e-commerce threshold analysis. (10) No succession planning timeline. The analysis covers perhaps 35% of required content and contains multiple fabricated legal provisions.",
+        "missed_elements": [
+          "Lei 14.754/2023 come-cotas mechanism correctly described (periodic taxation of exclusive funds for individuals, not SELIC+6% on corporate CFC net worth)",
+          "Correct CFC regime analysis under Lei 12.973/2014 as modified \u2014 not fabricated SELIC+6% deemed rate",
+          "Lei 15.270/2025 dividend taxation \u2014 analysis appears to describe a fabricated provision rather than verified enacted law",
+          "Portugal-Brazil tax treaty (Convention of 2001) analysis for non-resident child \u2014 completely absent",
+          "ITCMD progressive reform under EC 132/2023 \u2014 completely absent (states must adopt progressive rates, up to 8% federal cap guidance)",
+          "Succession planning timeline exploiting ITCMD window before state-level implementation \u2014 completely absent",
+          "Simples Nacional e-commerce entity threshold risk analysis \u2014 completely absent",
+          "SaaS/tech company ISS-to-IBS destination-based shift impact (revenue recognition at client location vs. service provider location) \u2014 only superficially addressed",
+          "Interplay analysis between reforms (holistic view) \u2014 absent; each entity treated in silo",
+          "Restructuring steps with concrete timeline \u2014 analysis truncated before this section",
+          "Entity 3 analysis incomplete; entities 4+ (e-commerce, real estate if present) never addressed",
+          "ICMS credit recovery strategy \u2014 identified as risk but no concrete estrat\u00e9gia de aproveitamento or litigation/administrative recovery path outlined",
+          "Fabricated 'RFB Form 8621' (this is a US IRS form) \u2014 constitutes a hallucination mixing US and Brazilian tax law",
+          "No analysis of Simples Nacional exclusion risk triggers under new IBS/CBS framework",
+          "No analysis of real property (if applicable) under ITBI or IPTU reform aspects",
+          "No actionable restructuring recommendations with prioritized steps",
+          "Wealth tax (IGF proposals) constitutional dimension not addressed despite being listed in evaluation criteria"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "haiku": {
+      "PE": 25.0,
+      "CE": 23.67,
+      "FI-scaffold": 27.33,
+      "FI-meta": 24.333333333333332
+    },
+    "sonnet": {
+      "PE": 33.0,
+      "CE": 31.0,
+      "FI-scaffold": 29.33,
+      "FI-meta": 32.0
+    }
+  }
+}

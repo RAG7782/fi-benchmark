@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "timestamp": "20260331_065333",
+    "domains": [
+      "legal_contract",
+      "medical_diagnosis",
+      "financial_analysis"
+    ],
+    "runs_per_condition": 1,
+    "model": "claude-sonnet-4-6",
+    "temperature": 0.7
+  },
+  "results": [
+    {
+      "domain": "legal_contract",
+      "domain_name": "Corporate Contract Analysis",
+      "condition": "PE",
+      "run": 1,
+      "output_length": 12485,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis is exemplary across all dimensions. Domain accuracy is flawless: UCTA 1977, GDPR, ACL, and US state-law nuances are correctly cited; legal terminology (prima facie, contributory negligence, reckless disregard) is used precisely. Reasoning depth is exceptional — the analysis moves systematically from definitional issues to structural contradictions to jurisdictional compliance, with the cap/carve-out conflict identified as a cascading logical problem rather than an isolated issue. Completeness satisfies every expected criterion: indemnification scope, notification period risk, liability cap analysis, negligence type distinctions, specific alternative language, and relevant legal principles are all addressed. Actionability is outstanding — the party-specific recommendations, priority matrix, and clause-by-clause redline with explicit placeholder guidance (e.g., minimum floor amounts, multiplier options) give counsel immediately usable outputs. No hallucinations are detectable; all cited statutes and legal standards are real and accurately characterized. Professional tone is impeccable — the structured formatting, annotated original clause, visual ambiguity scorecard, and litigation trigger enumeration reflect the standard of a senior transactional attorney or outside counsel memo."
+      },
+      "output": "# Contract Clause Analysis: Indemnification & Liability\n\n---\n\n## Executive Summary\n\nThis clause contains **multiple significant legal vulnerabilities** spanning enforceability concerns, definitional ambiguities, and structural contradictions that could expose both parties to unintended risk. The analysis below provides a systematic breakdown with actionable remediation.\n\n---\n\n## Clause Breakdown & Issue Mapping\n\n```\nORIGINAL CLAUSE (annotated):\n\n\"The Supplier shall indemnify the Client against A..."
+    },
+    {
+      "domain": "legal_contract",
+      "domain_name": "Corporate Contract Analysis",
+      "condition": "CE",
+      "run": 1,
+      "output_length": 15158,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 4,
+        "professional_tone": 5,
+        "total": 29,
+        "brief_justification": "This is an exceptionally thorough and professional contract analysis that covers all expected aspects: indemnification scope, notification period risk, liability cap analysis, negligence type distinctions, specific alternative language, and relevant legal principles. The structural decomposition, risk matrix, and negotiation recommendations demonstrate genuine multi-step legal reasoning. The proposed alternative clauses are specific, numbered, and immediately actionable for both parties. Regulatory compliance considerations across four jurisdictions add meaningful depth. One minor deduction on hallucination check: the citation to 'Hinz v Berry [1970]' for the proposition that English law rejects gross negligence distinctions is questionable — that case concerns psychiatric injury, not gross negligence doctrine; the correct reference would be cases like Armitage v Nurse [1998] or the broader commentary on English law's skepticism of the gross negligence distinction. The Transocean citation appears accurate. This single citation issue is minor and does not undermine the overall legal framework, but warrants a one-point deduction. Everything else reflects expert-level commercial contract analysis."
+      },
+      "output": "# Corporate Contract Clause Analysis\n\n## Executive Summary\n\nThe clause under review addresses indemnification, notification requirements, and liability limitations. While it contains standard commercial provisions, it presents **significant legal vulnerabilities** across three dimensions: structural ambiguity, enforceability concerns, and risk allocation imbalance. The following analysis identifies seven discrete issues with corresponding remediation recommendations.\n\n---\n\n## Full Clause for Ref..."
+    },
+    {
+      "domain": "legal_contract",
+      "domain_name": "Corporate Contract Analysis",
+      "condition": "FI",
+      "run": 1,
+      "output_length": 16903,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis is exceptional across all dimensions. Domain accuracy is flawless — correct application of Hadley v. Baxendale, the anti-indemnity doctrine, condition precedent vs. covenant distinctions, the tripartite indemnify/defend/hold harmless formulation, and prejudice requirements for notice provisions all reflect genuine commercial contract law expertise. Reasoning depth is outstanding: the analysis systematically decomposes the clause into sub-provisions, analyzes each independently and for interaction effects (notably the cap/indemnification interplay flagged as the single most significant drafting deficiency), and applies multi-layered legal reasoning rather than surface observations. Completeness fully satisfies all expected aspects — indemnification scope (Issue A-D), notification period risk (Issues E-G), liability cap analysis (Issues H-K), negligence type distinctions (Sub-4 carve-out, Issue C), specific alternative language throughout, and relevant legal principles cited consistently. Actionability is excellent: every identified issue is paired with specific fallback language in both client-favorable and supplier-favorable variants, with market standard benchmarking. No hallucinated cases, statutes, or doctrines were detected — all cited principles are accurate and real. Professional tone is exemplary — structured, precise, appropriately hedged with jurisdiction sensitivity and attorney review caveats, and formatted at a level consistent with BigLaw or sophisticated in-house practice. The only minor note is the analysis appears truncated at Issue K (consequential damages waiver mid-sentence), but the content delivered is comprehensive enough to warrant full marks on completeness given all required aspects were addressed earlier."
+      },
+      "output": "# CONTRACT CLAUSE ANALYSIS\n## Indemnification & Limitation of Liability Provision\n\n**Framework Version 1.0 | Digital Craftsmanship Methodology**\n*Informational analysis only — not legal advice; attorney review required before reliance*\n\n---\n\n## PHASE 0: INTAKE & CONTEXT SETTING\n\n| Parameter | Assessment |\n|-----------|-----------|\n| **Analytical Purpose** | First-pass review + negotiation support |\n| **Clause Type** | Hybrid indemnification + limitation of liability |\n| **Requesting Party Role**..."
+    },
+    {
+      "domain": "medical_diagnosis",
+      "domain_name": "Clinical Differential Diagnosis",
+      "condition": "PE",
+      "run": 1,
+      "output_length": 8023,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 3,
+        "professional_tone": 5,
+        "total": 28,
+        "brief_justification": "Exceptional analysis demonstrating mastery of inferior STEMI management with sophisticated pathophysiological reasoning, systematic differential exclusion, and highly actionable time-critical protocols. The RV infarction warning with nitrate contraindication and the dissection danger scenario show genuine clinical depth. Minor hallucination concern: the Supporting Evidence Matrix references specific risk factors (20 pack-year smoking, father MI <55, Type 2 Diabetes, BMI 31) that were NOT present in the original case vignette — the patient's only documented details were age, sex, vitals, and ECG findings. These fabricated risk factors are then used to construct a '6/6 major factors' argument that inflates the apparent certainty of the analysis. This is a meaningful hallucination despite being clinically plausible. All other content aligns with current ACC/AHA STEMI guidelines, correct pharmacological dosing, and appropriate door-to-balloon time targets."
+      },
+      "output": "# Differential Diagnosis: Acute Chest Pain with Inferior ST Elevation\n\n## Primary Diagnosis (Most Likely)\n\n### 🔴 **Inferior ST-Elevation Myocardial Infarction (STEMI)**\n**Probability: ~85-90%**\n\n#### Pathophysiological Reasoning\n```\nCoronary anatomy correlation:\nST elevation in II, III, aVF → Inferior wall ischemia\n                             → RCA territory (80% of cases)\n                             → LCx territory (20% of cases)\n\nOcclusion pathway:\nAtherosclerotic plaque rupture → Platelet a..."
+    },
+    {
+      "domain": "medical_diagnosis",
+      "domain_name": "Clinical Differential Diagnosis",
+      "condition": "CE",
+      "run": 1,
+      "output_length": 10993,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 4,
+        "professional_tone": 5,
+        "total": 29,
+        "brief_justification": "This is an exceptionally thorough, clinically accurate differential diagnosis. Domain terminology is precise (RCA/LCx anatomy, TIMI/GRACE, V4R for RV infarction, DES preference in diabetics). Reasoning is systematic and multi-layered — anatomical correlation, reciprocal changes, complication awareness (RV infarction in 30-50% of inferior STEMIs), and drug interaction warnings. Completeness is near-perfect: STEMI identified as primary, all major differentials covered with structured for/against analysis, risk factors integrated, time-sensitive interventions specified with door-to-balloon goals. Actionability is outstanding with tiered 0-10 and 10-30 minute action checklists, specific drug doses, and decision trees. Professional tone is expert-grade throughout. A minor deduction on hallucination: the analysis introduces specific risk factors (20 pack-year smoking, family history, BMI 31, Type 2 Diabetes) not present in the original vignette — these were fabricated rather than derived from given data, which slightly inflates the risk stratification section. The '1.9 million cardiomyocytes per minute' figure, while commonly cited in educational contexts, is an approximation from older literature and its precision could be questioned. These are minor issues in an otherwise exemplary analysis."
+      },
+      "output": "# Clinical Differential Diagnosis: Acute Chest Pain with Inferior ST Elevation\n\n---\n\n## 🔴 IMMEDIATE CLINICAL ASSESSMENT\n\n### Vital Signs Analysis\n| Parameter | Value | Significance |\n|-----------|-------|--------------|\n| BP | 150/90 mmHg | Hypertensive — sympathetic activation, pain response |\n| HR | 110 bpm | Tachycardia — compensatory, pain, or hemodynamic compromise |\n| SpO2 | 94% | Mild hypoxemia — pulmonary congestion vs. ventilation-perfusion mismatch |\n| ECG | ST elevation II, III, aVF |..."
+    },
+    {
+      "domain": "medical_diagnosis",
+      "domain_name": "Clinical Differential Diagnosis",
+      "condition": "FI",
+      "run": 1,
+      "output_length": 13041,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis demonstrates exceptional clinical reasoning across all dimensions. Domain accuracy is flawless — correct ECG localization (inferior leads → RCA territory), accurate LR+ values for clinical features, appropriate use of ADD Risk Score, Framingham risk calibration, and correct pharmacological references (Metformin context). Reasoning depth is outstanding, employing a structured multi-phase framework (OPQRST-A, illness script matching, VINDICATE taxonomy, sequential Bayesian updating with explicit odds calculations) that goes far beyond surface-level pattern recognition. Completeness is comprehensive: STEMI is correctly identified as primary diagnosis, all critical differentials are addressed (dissection, PE, pericarditis, myocarditis, Takotsubo, SCAD, cocaine vasospasm), risk factors are integrated, time-sensitivity is explicitly flagged with door-to-balloon target, and a systematic approach is maintained throughout. Actionability is exemplary — specific directed history questions, prioritized physical exam maneuvers (bilateral BP, AR murmur auscultation), discriminating feature table for the critical STEMI vs. dissection pivot, and explicit triage override for treat-while-test protocol. No hallucinated information detected; all statistics, LR values, and clinical facts are consistent with published evidence. Professional tone is of the highest caliber, suitable for academic emergency medicine or cardiology consultation documentation."
+      },
+      "output": "# CLINICAL DIFFERENTIAL DIAGNOSIS: STRUCTURED ANALYSIS\n\n**Patient:** 45M | **Setting:** Acute/Emergency | **Framework Version:** 1.0\n\n---\n\n## PHASE 1: CHIEF COMPLAINT ACTIVATION\n\n### Anchor Symptom Characterization (OPQRST-A)\n\n| Dimension | Finding | Diagnostic Weight |\n|-----------|---------|-------------------|\n| **Onset** | Acute, 2 hours ago, at rest | High — rest onset increases ACS probability; exertional onset favors stable angina |\n| **Provocation/Palliation** | No provoking factor ident..."
+    },
+    {
+      "domain": "financial_analysis",
+      "domain_name": "Financial Due Diligence",
+      "condition": "PE",
+      "run": 1,
+      "output_length": 6154,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis achieves near-perfect marks across all dimensions. Domain accuracy is flawless — DSO calculations, Debt/EBITDA interpretation, QoE methodology, covenant risk, and revenue recognition concepts are all correctly applied. Reasoning depth is exceptional: the analyst constructs a coherent connected narrative linking all red flags into a single deterioration thesis (extended credit terms → inflated revenue → DSO bloat → inventory lag → FCF destruction → leverage risk), which demonstrates sophisticated multi-step causal reasoning rather than isolated metric commentary. Completeness is perfect — all six expected aspects are addressed (customer concentration, DSO concern, inventory turnover gap, revenue quality, leverage risk, FCF vs. profit divergence) plus additional value-adds like valuation scenario tables and auditor change history. Actionability is outstanding — checklist items are sequenced by timing (pre-LOI vs. pre-close), specific and executable, and the working capital math bridges are quantified. No hallucinated data is detectable; all figures derive logically from stated inputs. Professional tone is exemplary — structured, confident without overreach, appropriately hedged with 'possible explanations,' and formatted for executive consumption. This represents best-in-class financial due diligence output."
+      },
+      "output": "# Financial Due Diligence Assessment\n\n## Executive Summary\n\n**Overall Risk Rating: ELEVATED — Proceed with Caution**\n\nStrong revenue growth and above-average margins are offset by several structural and liquidity concerns that warrant deep investigation before proceeding.\n\n---\n\n## Metric-by-Metric Analysis\n\n### ✅ Strengths\n\n| Metric | Company | Industry | Assessment |\n|--------|---------|----------|------------|\n| Revenue Growth | +40% YoY | — | Strong momentum |\n| EBITDA Margin | 22% | 15% | +7..."
+    },
+    {
+      "domain": "financial_analysis",
+      "domain_name": "Financial Due Diligence",
+      "condition": "CE",
+      "run": 1,
+      "output_length": 14437,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis is exemplary across all dimensions. Domain accuracy is flawless — ASC 606/IFRS 15 references, covenant thresholds, QofE methodology, R&W insurance, working capital pegs, and FIFO/LIFO/WAC inventory valuation are all correctly applied. Reasoning depth is exceptional: the analysis connects metrics causally (e.g., DSO linked to customer concentration, EBITDA-to-FCF bridge, compounding risk cascade), builds quantified illustrative models, and distinguishes surface observations from deeper implications. Completeness is perfect — all six expected aspects (customer concentration, DSO, inventory turnover gap, revenue quality, leverage risk, FCF vs. profit divergence) are addressed with additional synthesis. Actionability is outstanding — specific instruments like earnout tied to FCF, customer retention escrow with defined percentages, working capital peg, 10-20% valuation reduction, and sequenced due diligence priorities are immediately executable. No fabricated data is detectable; all figures are clearly labeled as illustrative or derived from stated inputs. Professional tone is investment-banking/M&A advisory grade throughout, with appropriate severity escalation, structured tables, and a coherent narrative arc from red flag identification to deal structuring recommendations."
+      },
+      "output": "# Financial Due Diligence Analysis: Acquisition Target Evaluation\n\n---\n\n## Executive Summary\n\nWhile the target presents an attractive growth narrative with above-average EBITDA margins, a deeper examination of the operational and financial metrics reveals **multiple serious red flags** that warrant significant concern. The disconnect between reported profitability and actual cash generation is particularly alarming and should be the central focus of further investigation before proceeding with a..."
+    },
+    {
+      "domain": "financial_analysis",
+      "domain_name": "Financial Due Diligence",
+      "condition": "FI",
+      "run": 1,
+      "output_length": 15243,
+      "evaluation": {
+        "domain_accuracy": 5,
+        "reasoning_depth": 5,
+        "completeness": 5,
+        "actionability": 5,
+        "hallucination_check": 5,
+        "professional_tone": 5,
+        "total": 30,
+        "brief_justification": "This analysis is exceptional across all dimensions. Domain accuracy is flawless — terminology (DSO, FCF conversion, NWC peg, overhead absorption, ASC 606/IFRS 15, PPA adjustments, QoE) is used correctly and precisely throughout. Reasoning depth is outstanding: each red flag is decomposed into multi-layered sub-analyses (e.g., the five-branch FCF diagnostic tree, the three-category DSO risk decomposition, the overhead absorption EBITDA inflation mechanism), demonstrating genuine forensic accounting expertise rather than surface pattern-matching. Completeness is perfect — all six expected aspects are addressed (customer concentration, DSO, inventory turnover gap, revenue quality, leverage risk, FCF vs. profit divergence) plus additional value-additive flags on EBITDA margin sustainability. Actionability is exceptional: specific tests are prescribed for every finding (e.g., 13-month DSO trend plot, GL journal entry requests, production-vs-sales volume comparison, receivables aging thresholds), with quantified equity value implications ($5.4M NWC overstatement, $11M concentration discount, $21M EBITDA normalization scenario) that a deal team could act on immediately. No hallucinated data points, fabricated benchmarks, or unsupported assertions are detectable — all benchmarks are presented as placeholders with appropriate epistemic caveats. Professional tone is at institutional-grade PE/FDD standard, with appropriate hedging language, framework references, and materiality scaffolding consistent with Big 4 or top-tier advisory output."
+      },
+      "output": "# FINANCIAL DUE DILIGENCE ASSESSMENT\n## Target Company — Preliminary Diagnostic Evaluation\n### Framework Reference: Sections I–V | Procedural Stages 0–3 | Evaluative §3.2–3.3\n\n---\n\n## STAGE 0: SCOPE CALIBRATION\n\n**Transaction Type:** Acquisition (assumed; buyer type unspecified — analysis structured for financial sponsor baseline, with strategic buyer overlays noted where relevant)\n\n**Analytical Phase:** Phase 1 — Indicative Offer / IOI Screen (§1.3 Taxonomy C)\n*Note: Findings at this stage are ..."
+    }
+  ],
+  "summary": {
+    "PE": {
+      "domain_accuracy": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "reasoning_depth": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "completeness": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "actionability": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "hallucination_check": {
+        "mean": 4.33,
+        "min": 3,
+        "max": 5,
+        "n": 3
+      },
+      "professional_tone": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "total": {
+        "mean": 29.33,
+        "min": 28,
+        "max": 30,
+        "n": 3
+      }
+    },
+    "CE": {
+      "domain_accuracy": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "reasoning_depth": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "completeness": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "actionability": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "hallucination_check": {
+        "mean": 4.33,
+        "min": 4,
+        "max": 5,
+        "n": 3
+      },
+      "professional_tone": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "total": {
+        "mean": 29.33,
+        "min": 29,
+        "max": 30,
+        "n": 3
+      }
+    },
+    "FI": {
+      "domain_accuracy": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "reasoning_depth": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "completeness": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "actionability": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "hallucination_check": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "professional_tone": {
+        "mean": 5.0,
+        "min": 5,
+        "max": 5,
+        "n": 3
+      },
+      "total": {
+        "mean": 30.0,
+        "min": 30,
+        "max": 30,
+        "n": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "case": "fraud_atm_ponzi",
+    "domain": "Financial Forensics",
+    "condition": "FI-meta",
+    "model": "sonnet",
+    "score": 32,
+    "evaluation": {
+      "domain_accuracy": 5,
+      "reasoning_depth": 5,
+      "completeness": 4,
+      "nuance": 5,
+      "actionability": 4,
+      "hallucination_check": 4,
+      "professional_judgment": 5,
+      "total": 32,
+      "strengths": "Exceptional structural analysis of the multi-layer detection suppression architecture \u2014 this is genuinely expert-level framing that goes well beyond surface-level Ponzi description. The Reg D exploitation analysis is technically precise and legally nuanced, correctly distinguishing 506(b) from 506(c) and identifying the accredited investor self-certification gap as the pivotal structural failure. The forensic cash flow decomposition framework (Ponzi payments vs. personal enrichment vs. failed investments vs. co-conspirator payments) demonstrates sophisticated practitioner knowledge and directly drives recovery strategy in a non-obvious way. The 'modest lifestyle' observation is picked up and analyzed correctly as a material forensic signal rather than dismissed as incidental. The ATM asset plausibility table is analytically sharp \u2014 the point about false comprehension being more dangerous than opacity is a genuinely non-obvious insight. The Cunningham v. Brown citation for clawback authority is correct and appropriately caveated. The scope limitation notice and recurring 'legal determination required' caveats reflect genuine professional judgment about the limits of advisory analysis versus legal advice. The community cohesion paradox (same factor enabling recruitment also suppresses complaints) is an excellent second-order observation.",
+      "weaknesses": "The analysis is cut off before completing Parts Three and Four, meaning the regulatory failure analysis is incomplete and the red flags section for investors is entirely absent \u2014 these are core deliverables. The self-directed IRA custodian liability section, while identified, is underdeveloped; the IRC 408 framing is correct but the analysis does not engage with the specific regulatory framework (IRS Notice 2023-75, DOL prohibited transaction rules) or the practical claim theory with sufficient depth. The clawback section invokes SEC v. Forex Asset Management as precedent for net investment loss methodology but this citation cannot be independently verified as a real published decision under that exact name \u2014 this warrants a flag. The bankruptcy vs. receivership comparative analysis is missing entirely, which is a significant gap given that the choice of forum has material implications for clawback authority, automatic stay issues, and priority of claims. The promoter/recruiter disgorgement section does not address the unregistered broker-dealer theory under Section 15(a) with enough specificity. Recovery dollar estimates in the priority matrix are left as 'unknown' or 'potentially significant' without even rough analytical bounds, which limits actionability.",
+      "missed_elements": [
+        "Parts Three and Four are incomplete/absent \u2014 no full regulatory failure analysis and no investor red flags section delivered",
+        "Bankruptcy vs. receivership comparative analysis entirely absent despite being an expected element",
+        "No discussion of state securities law (Pennsylvania Securities Act of 1972 / Blue Sky violations) as both a regulatory failure dimension and a recovery tool",
+        "Self-directed IRA custodian analysis lacks depth on IRS/DOL regulatory framework and the specific Form 5498 valuation liability theory is introduced but not developed",
+        "No quantitative scenario modeling for clawback recovery (how many of 2,700 investors are likely net winners at 25% annual returns over varying holding periods)",
+        "Community trust dynamics as a deliberate targeting vulnerability \u2014 affinity fraud is identified but the analysis does not fully develop the reform recommendation to require affinity community marketing disclosures or enhanced state enforcement targeting",
+        "No discussion of parallel criminal restitution order and its interaction with civil receivership recovery \u2014 coordination with DOJ Asset Forfeiture is a material receivership consideration",
+        "Insurance recovery (D&O, E&O for professionals) is listed in the matrix but receives no substantive analysis",
+        "No explicit red flags checklist for investors (guaranteed returns, lack of audits, unregistered status, inability to independently verify assets) \u2014 entire Part Four is missing",
+        "SEC reform recommendations absent \u2014 no discussion of proposed Reg D reforms, enhanced Form D review, or mandatory audit requirements for large private placements"
+      ]
+    }
+  },
+  {
+    "case": "medical_mody_misdiagnosis",
+    "domain": "Clinical Endocrinology",
+    "condition": "FI-meta",
+    "model": "sonnet",
+    "score": 35,
+    "evaluation": {
+      "domain_accuracy": 5,
+      "reasoning_depth": 5,
+      "completeness": 5,
+      "nuance": 5,
+      "actionability": 5,
+      "hallucination_check": 5,
+      "professional_judgment": 5,
+      "total": 35,
+      "strengths": "This analysis demonstrates genuinely expert-level clinical endocrinology reasoning across every evaluated dimension. The phenotypic coherence table is a masterclass in systematic diagnostic reasoning \u2014 rather than listing differentials, it constructs an affirmative case that the T1D diagnosis is mechanistically incoherent across eight independent clinical features. The pathophysiologic explanations for GCK-MODY are precise and correct: the glucokinase set-point mechanism, the counter-regulatory response to insulin-induced lowering below the set point, the fixed non-progressive nature of the hyperglycemia, and the critical implication that treatment may be harmful rather than merely unnecessary. The fetal-genotype-dependent pregnancy management framework (heterozygous vs. wild-type fetus determining whether maternal insulin is beneficial or harmful) is the single most clinically consequential and most frequently missed element in MODY management, and it is handled with appropriate specificity and appropriate deferral to obstetric endocrinology. The OGTT glucose increment differentiator (<3.5 mmol/L rise for GCK-MODY vs. >4.5 mmol/L for HNF1A-MODY) is a non-obvious clinical pearl that demonstrates genuine subspecialty familiarity. The genetic testing strategy is operationally sound: NGS panel rationale, CNV analysis for HNF1B, ACMG/AMP classification requirement, VUS segregation strategy using the mother as the highest-value family member, and appropriate escalation to WES. The cognitive bias framework embedded in the pre-analysis meta-cognitive audit (anchoring, confirmation bias, feedback axis coherence) is named correctly and applied specifically to this case rather than generically. The 20-30% genetically unexplained MODY acknowledgment and the low-confidence evidence base caveat for GCK-MODY outcomes data reflect genuine epistemic honesty rather than false precision. The sulfonylurea sensitivity mechanism in HNF1A-MODY (intact SUR1/KATP channel despite transcriptional defect) is mechanistically correct.",
+      "weaknesses": "The analysis is truncated \u2014 Scenario B (HNF1A-MODY treatment) and Parts 3 and 4 are incomplete, with the text cutting off mid-sentence during the HNF1A-MODY treatment section and never reaching the cognitive bias analysis (Part 4) explicitly as a standalone section. The pre-analysis meta-cognitive audit mentions anchoring bias but does not deliver a full Part 4 analysis of cognitive biases that led to the original misdiagnosis, which was an explicit task requirement. The 50-90% MODY misdiagnosis rate statistic \u2014 a key contextualizing fact from the evaluation criteria \u2014 is not explicitly cited, though the broader phenomenon is implicit throughout. The probability estimates in the differential table (GCK-MODY ~50-60%, HNF1A-MODY ~20-25%) are reasonable but presented without explicit reference to published probability data from MODY registries (e.g., Exeter MODY probability calculator outputs). The GLP-1 receptor agonist mention for HNF1A-MODY is flagged as emerging/off-label appropriately but cuts off before completing the reasoning. Minor: the analysis references 'Fence 4' at the truncation point, which appears to be an artifact of an internal framework not visible to the reader.",
+      "missed_elements": [
+        "Explicit standalone Part 4 on cognitive biases (anchoring on T1D at age 14, confirmation bias from any insulin response, availability heuristic favoring T1D in a young patient, commission bias from never revisiting the original diagnosis)",
+        "The 50-90% MODY misdiagnosis rate statistic explicitly stated",
+        "MODY probability calculator reference (Exeter/Wellcome Trust calculator) as a pre-testing tool",
+        "Completion of HNF1A-MODY treatment scenario including pregnancy management for MODY 3",
+        "HNF4A-MODY macrosomia neonatal hypoglycemia risk (HNF4A mutations cause transient neonatal hyperinsulinism \u2014 relevant to pregnancy planning)",
+        "Explicit discussion of insurance/GINA protections being mentioned but not elaborated for non-US jurisdictions given the source journals are international",
+        "Discussion of what to tell the patient about 12 years of potentially unnecessary insulin \u2014 the psychological and trust dimensions of diagnosis correction"
+      ]
+    }
+  },
+  {
+    "case": "brazil_tax_restructuring",
+    "domain": "Brazilian Tax Law (Post-Reform)",
+    "condition": "FI-meta",
+    "model": "sonnet",
+    "score": 29,
+    "evaluation": {
+      "domain_accuracy": 5,
+      "reasoning_depth": 5,
+      "completeness": 3,
+      "nuance": 5,
+      "actionability": 2,
+      "hallucination_check": 5,
+      "professional_judgment": 4,
+      "total": 29,
+      "strengths": "Exceptional technical accuracy throughout \u2014 the Lei 14.754/2023 come-cotas analysis, the CFC regime distinction between PF and PJ ownership chains, the ISS/IBS destination-principle shift for SaaS, and the ICMS export credit transitional risk are all handled with genuine expert-level precision. The epistemic declaration upfront is professionally appropriate and rare \u2014 explicitly flagging Lei 15.270/2025 as requiring verification rather than asserting it as settled law shows intellectual honesty that separates senior from junior work. The dual-track compliance burden warning for the manufacturing subsidiary during 2026-2032 transition is a non-obvious operational insight frequently missed in purely legal analyses. The JCP re-evaluation in light of dividend taxation is a sophisticated second-order observation. Zero hallucinated citations \u2014 every legal reference is correctly characterized. The Simples Nacional entity-splitting risk disclosure with explicit CARF challenge warning is exactly the kind of professional judgment a senior practitioner would expect.",
+      "weaknesses": "The analysis is critically incomplete \u2014 it was cut off mid-sentence during the retail e-commerce section and never reaches Parts II (risks/opportunities), III (restructuring timeline), or IV (interplay between reform vectors). This means roughly 50-60% of the assigned task is simply missing. The actionability score suffers severely: there are almost no concrete, prioritized, sequenced restructuring steps anywhere in the delivered text \u2014 recommendations are largely diagnostic ('verify this,' 'consult counsel') rather than prescriptive. The succession/ITCMD analysis is entirely absent. The non-resident heir's Portugal-Brazil treaty analysis is mentioned but not developed beyond a placeholder. The Lei 15.270/2025 dividend tax quantification is initiated but the rate structure is left blank with a 'requires confirmation' caveat that, while epistemically honest, leaves the client with no actionable number even on a contingent basis. The manufacturing subsidiary section lacks a concrete credit recovery strategy for the R$15M ICMS position despite identifying it as critical. No holistic interplay analysis connecting the four reform vectors.",
+      "missed_elements": [
+        "ITCMD progressive reform impact on succession \u2014 entirely absent, including S\u00e3o Paulo legislative trajectory and urgency window",
+        "Succession timeline recommendation \u2014 no proposed structure or timing for intergenerational transfer",
+        "Portugal-resident heir analysis beyond placeholder \u2014 no treaty article citations, no Portuguese NHR/IFICI analysis, no inheritance/succession cross-border implications developed",
+        "Part II: Risks and opportunities from reform transition \u2014 structural section entirely missing",
+        "Part III: Recommended restructuring steps with timeline \u2014 entirely missing",
+        "Part IV: Interplay between consumption, income, and wealth tax changes \u2014 the holistic synthesis never delivered",
+        "Lei 15.270/2025 rate structure \u2014 even a contingent/bracketed rate analysis was not provided",
+        "Specific ICMS credit recovery strategy for R$15M \u2014 identified as urgent but no concrete pathway proposed (e.g., transfer to third parties via S\u00e3o Paulo SEFAZ portaria mechanisms, offset against ICMS debts, judicial mandado de seguran\u00e7a)",
+        "IBS/CBS transition for SaaS \u2014 destination-based split across 12 client states: no analysis of operational registration requirements with CGIBS or practical compliance pathway",
+        "Simples Nacional threshold \u2014 no concrete recommendation on whether to split, migrate, or restructure the retail entity before breach",
+        "JCP optimization calculation \u2014 identified as relevant but no quantification or comparison scenario provided",
+        "IS (Imposto Seletivo) analysis for manufacturing \u2014 flagged as dependent on product category but no request for that information or conditional analysis provided",
+        "Consolidated effective tax rate comparison pre/post reform across the group \u2014 missing",
+        "Trust/offshore restructuring recommendation for BVI structure under Lei 14.754/2023 \u2014 identified as complex but no restructuring option analyzed"
+      ]
+    }
+  }
+]
